@@ -65,7 +65,7 @@ There is no tests for this project.
 
 ## 🎅 Authors
 
-Rimantas: [Github](https://github.com/Dovydas-G)
+Dovydas: [Github](https://github.com/Dovydas-G)
 
 ## ⚠️ License
 
