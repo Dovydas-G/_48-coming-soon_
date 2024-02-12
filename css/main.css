@@ -1,3 +1,8 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
 body,
 body * {
     margin: 0;
@@ -50,7 +55,7 @@ body {
 
 .hero {
     min-height: 100vh;
-    background-image: url(../img/background.png);
+    background-image: url(../img/banner-1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -142,6 +147,17 @@ footer p > a {
 }
 footer p > a:hover {
     text-decoration: underline;
+}
+
+.back-to-top {
+    background-color: red;
+    width: 100px;
+    position: fixed;
+    bottom: 5rem;
+    right: 5rem;
+    top: 65%;
+    left: 75%;
+    transform: translate(-50%, -50%);
 }
 
 /* RESPONSIVE */
