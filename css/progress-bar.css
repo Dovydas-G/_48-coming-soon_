@@ -9,7 +9,6 @@
     flex-direction: column;
     gap: 0.5rem;
 }
-
 .progress-bar > .top {
     display: flex;
     justify-content: space-between;
@@ -17,27 +16,37 @@
     font-size: 1.1rem;
     color: #777;
 }
-
 .progress-bar .label {
-
 }
-
-.progress-bar .valuee {
-    
+.progress-bar .value {
 }
-
 .progress-bar > .bottom {
-    background-color: #777;
+    background-color: #ccc;
     width: 100%;
     height: 0.5rem;
     border-radius: 0.25rem;
     overflow: hidden;
 }
-
 .progress-bar .progress {
-    background-color: #03a9f4;
     width: 90%;
     height: inherit;
-    border-radius:0 0.25rem 0.25rem 0;
+}
+.progress-bar .progress::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: inherit;
+    background-color: #03a9f4;
+    border-radius: 0 0.25rem 0.25rem 0;
+    animation-name: loading;
+    animation-duration: 3s;
 }
 
+@keyframes loading {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
